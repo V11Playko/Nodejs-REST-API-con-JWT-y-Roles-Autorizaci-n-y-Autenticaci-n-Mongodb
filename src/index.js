@@ -1,8 +1,5 @@
 import app from "./app";
-import mongoose from "mongoose";
 import "./database";
-const dotenv = require("dotenv"); //require dotenv package
-dotenv.config({ path: "./config.env" }); //import config.env fil
 
 app.listen(3000);
 
