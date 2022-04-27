@@ -1,0 +1,39 @@
+{
+  "name": "nodejs-rest-api-con-jwt-y-roles-autorizaci-n-y-autenticaci-n-mongodb",
+  "version": "1.0.0",
+  "description": "Nodejs REST API con JWT y Roles (Autorización y Autenticación) &amp; Mongodb",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir build",
+    "dev": "nodemon src/index.js --exec babel-node",
+    "start": "node build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/V11Playko/Nodejs-REST-API-con-JWT-y-Roles-Autorizaci-n-y-Autenticaci-n-Mongodb.git"
+  },
+  "keywords": ["NodeJS, API REST, JWT, Autenticacion, Autorizacion, MongoDB"],
+  "author": "Heinner Vega <heinnervega20@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/V11Playko/Nodejs-REST-API-con-JWT-y-Roles-Autorizaci-n-y-Autenticaci-n-Mongodb/issues"
+  },
+  "homepage": "https://github.com/V11Playko/Nodejs-REST-API-con-JWT-y-Roles-Autorizaci-n-y-Autenticaci-n-Mongodb#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "helmet": "^5.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "nodemon": "^2.0.15"
+  }
+}
