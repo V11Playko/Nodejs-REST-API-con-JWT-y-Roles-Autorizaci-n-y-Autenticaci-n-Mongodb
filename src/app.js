@@ -2,9 +2,15 @@ import express from "express";
 import morgan from "morgan";
 import pkg from "../package.json";
 
-import productsRoutes from "./routes/product.routes";
+// Se importan los roles de libs/initialSetup
+import { createRoles } from "./libs/initialSetup.js";
 
+import productsRoutes from "./routes/products.routes";
+import authRoutes from "./routes/auth.routes";
+
+// Se inicia el servidor para luego mostrar los roles
 const app = express();
+createRoles();
 
 app.set("pkg", pkg);
 
@@ -20,6 +26,7 @@ app.get("/", (req, res) => {
   });
 });
 
-app.use("/products", productsRoutes);
+app.use("/api/products", productsRoutes);
+app.use("/api/auth", authRoutes);
 
 export default app;
