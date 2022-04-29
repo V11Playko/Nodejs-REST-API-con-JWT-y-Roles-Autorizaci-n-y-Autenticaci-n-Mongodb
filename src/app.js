@@ -7,6 +7,7 @@ import { createRoles } from "./libs/initialSetup.js";
 
 import productsRoutes from "./routes/products.routes";
 import authRoutes from "./routes/auth.routes";
+import usersRoutes from "./routes/user.routes";
 
 // Se inicia el servidor para luego mostrar los roles
 const app = express();
@@ -28,5 +29,6 @@ app.get("/", (req, res) => {
 
 app.use("/api/products", productsRoutes);
 app.use("/api/auth", authRoutes);
+app.use("/api/users", usersRoutes);
 
 export default app;
