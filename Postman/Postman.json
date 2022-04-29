@@ -1,0 +1,273 @@
+{
+	"info": {
+		"_postman_id": "a749d26e-b29d-4a6f-87f4-7eb4771d7640",
+		"name": "Api DB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "Get products",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/products/626947e5c87efc4220fe2a81",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"626947e5c87efc4220fe2a81"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNmE3ZTgzZGRiMTM5ZDYzMGYxMzkzNyIsImlhdCI6MTY1MTIzNDE3NywiZXhwIjoxNjUxMzIwNTc3fQ.ggJKX19_wWqCnO7-n4jnIbDcy2OFdGDJydafVusHbvo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"lamptop lenovo\",\r\n    \"category\": \"laptops\",\r\n    \"price\": 250.99,\r\n    \"imgURL\": \"https://img.asxzvxves\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put product",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"lamptop Thinkpad\",\r\n    \"category\": \"laptops\",\r\n    \"price\": 350.99,\r\n    \"imgURL\": \"https://img.123123sdfads\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/products/62698a607c77cb35eb39da93",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"62698a607c77cb35eb39da93"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete product",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"lamptop hp\",\r\n    \"category\": \"laptops\",\r\n    \"price\": 150.99,\r\n    \"imgURL\": \"https://img\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/products/626947e5c87efc4220fe2a81",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"626947e5c87efc4220fe2a81"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "/users",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNmMyNjUyYTNiN2FmZWU4MTlhN2M2NiIsImlhdCI6MTY1MTI1NDg2NiwiZXhwIjoxNjUxMzQxMjY2fQ.OBnuaYeFnYpYIR4xMDPAZPyr_gkIiTmmADamXS5io1w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "x-access-token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNmE3ZTgzZGRiMTM5ZDYzMGYxMzkzNyIsImlhdCI6MTY1MTIzNDM3MSwiZXhwIjoxNjUxMzIwNzcxfQ.rWpSvZgsZKfcivHRDvpi9SqIoayrQYF88j9A4DJpsJA",
+									"disabled": true
+								},
+								{
+									"key": "type",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "/api/auth/signup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"frank\",\r\n    \"email\": \"frank@gmail.com\",\r\n    \"password\": \"asdasdasd\",\r\n    \"roles\": [\"admin\", \"moderador\"]\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/auth/signin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"vega@gmail.com\",\r\n    \"password\": \"password\",\r\n    \"roles\": \"moderator\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
